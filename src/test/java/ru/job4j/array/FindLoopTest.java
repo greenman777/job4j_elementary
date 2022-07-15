@@ -52,4 +52,15 @@ public class FindLoopTest {
         int expected = -1;
         Assert.assertEquals(expected, result);
     }
+
+    @Test
+    public void whenDiapasonHas7Then5() {
+        int[] data = new int[]{8, 2, 10, 5, 4, 7};
+        int el = 7;
+        int start = 2;
+        int finish = 5;
+        int result = FindLoop.indexInRange(data, el, start, finish);
+        int expected = 5;
+        Assert.assertEquals(expected, result);
+    }
 }
