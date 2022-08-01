@@ -2,12 +2,12 @@ package ru.job4j.array;
 
 public class Matrix {
     public static int[][] multiple(int size) {
-        int[][] multiMatrix = new int[size][size];
+        int[][] matrices = new int[size][size];
         for (int row = 0; row < size; row++) {
             for (int cell = 0; cell < size; cell++) {
-                multiMatrix[row][cell] = (row + 1) * (cell + 1);
+                matrices[row][cell] = (row + 1) * (cell + 1);
             }
         }
-        return multiMatrix;
+        return matrices;
     }
 }
